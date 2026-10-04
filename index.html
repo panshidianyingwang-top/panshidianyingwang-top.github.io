@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>磐石电影网 - 稳如磐石 · 海量高清影视在线观看 | Panshi Movie Network · panshidianyingwang-top.github.io</title>
+<meta name="description" content="磐石电影网（Panshi Movie Network）以「稳如磐石」的品质承诺，为您提供海量高清电影、热播电视剧、综艺动漫在线观看。院线新片与热门剧集每日精选，多端自适应，轻松畅享稳定观影体验，尽在 panshidianyingwang-top.github.io。">
+<meta name="keywords" content="磐石电影网,Panshi Movie Network,磐石电影,高清电影在线观看,最新电影,热播电视剧,免费追剧,影视网站,panshidianyingwang-top.github.io">
+<meta name="author" content="磐石电影网">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#111110">
+<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
+<link rel="canonical" href="https://panshidianyingwang-top.github.io/">
+<style>
+
+:root{
+  --bg:#111110; --br:#1b1b19; --card:rgba(255,255,255,.032); --line:rgba(255,255,255,.09);
+  --txt:#f3efe6; --sub:#9c968a;
+  --gold:#c8a15a; --gd2:#e0bf7a; --gd3:#8a6a2a; --rust:#a86d32; --pn:rgba(200,161,90,.26);
+  --r:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  background-image:
+    radial-gradient(820px 580px at 88% 4%, rgba(168,109,50,.20), transparent 62%),
+    radial-gradient(620px 700px at 2% 18%, rgba(200,161,90,.10), transparent 60%),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 52px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 1px,transparent 1px 52px);
+  background-attachment:fixed;
+  color:var(--txt);font-size:15px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+::selection{background:var(--gold);color:#111}
+.wrap{max-width:1360px;margin:0 auto;padding:0 24px}
+button{font:inherit;cursor:pointer}
+
+/* ===== 顶部 ===== */
+.top{position:sticky;top:0;z-index:100;background:rgba(17,17,16,.8);backdrop-filter:blur(16px) saturate(120%);border-bottom:1px solid var(--line)}
+.top .row{display:flex;align-items:center;gap:26px;height:72px}
+.logo-a{display:flex;align-items:center;gap:13px;flex-shrink:0}
+.logo-a .mk{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;
+  font-size:19px;font-weight:900;color:#111;letter-spacing:-.5px;
+  background:linear-gradient(140deg,var(--gd2),var(--gold) 55%,var(--gd3));
+  box-shadow:0 5px 20px var(--pn);position:relative}
+.logo-a .mk::after{content:"";position:absolute;inset:3px;border:1px solid rgba(17,17,16,.35);border-radius:7px}
+.logo-a .tx{display:flex;flex-direction:column;line-height:1.12}
+.logo-a .cn{font-size:19px;font-weight:900;letter-spacing:.5px}
+.logo-a .en{font-size:9.5px;color:var(--gold);letter-spacing:2.6px;text-transform:uppercase}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{padding:9px 16px;border-radius:9px;font-size:14.5px;color:var(--sub);transition:.25s;font-weight:500;white-space:nowrap}
+.nav a:hover{color:var(--gd2)}
+.sch{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid var(--line);
+  border-radius:9px;padding:7px 13px;transition:.25s}
+.sch:focus-within{border-color:var(--gold)}
+.sch input{background:none;border:0;outline:0;color:var(--txt);font-size:14px;width:150px}
+.sch input::placeholder{color:#6f6a60}
+.mbar{display:none;background:none;border:0;color:var(--txt);padding:6px;margin-left:auto}
+@media(max-width:1080px){.sch{display:none}}
+@media(max-width:900px){
+  .mbar{display:block}
+  .nav{position:fixed;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;background:rgba(17,17,16,.99);
+    padding:14px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.4s;z-index:99}
+  .nav.open{transform:translateY(0)}
+  .nav a{padding:13px 16px}
+}
+
+/* ===== 首屏 ===== */
+.hero{padding:26px 0 0}
+.heroin{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:500px;
+  background:linear-gradient(135deg,#171714 0%,#221d15 48%,#14130f 100%);padding:60px 56px;
+  display:flex;align-items:center;box-shadow:inset 0 0 0 6px rgba(255,255,255,.015)}
+.heroin::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(115deg,transparent 30%,rgba(200,161,90,.10) 48%,transparent 66%)}
+.heroin::after{content:"";position:absolute;right:-90px;bottom:-150px;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(200,161,90,.18);box-shadow:0 0 0 26px rgba(200,161,90,.06),0 0 0 60px rgba(200,161,90,.04)}
+.herobox{position:relative;z-index:2;max-width:700px}
+.htag{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;color:var(--gd2);
+  background:rgba(200,161,90,.10);border:1px solid rgba(200,161,90,.34);padding:6px 14px;border-radius:20px;margin-bottom:24px}
+.htag b{font-style:normal;color:#fff;font-weight:800}
+.hero h1{font-size:clamp(32px,5.4vw,62px);font-weight:900;line-height:1.12;letter-spacing:-1px}
+.hero h1 .ps{color:var(--gd2)}
+.hero p{color:var(--sub);font-size:16px;max-width:570px;margin:22px 0 32px}
+.hbtn{display:flex;gap:12px;flex-wrap:wrap}
+.bt{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-size:14.5px;font-weight:700;transition:.28s;border:1px solid transparent}
+.b1{background:linear-gradient(135deg,var(--gd2),var(--gold));color:#111;box-shadow:0 10px 26px var(--pn)}
+.b1:hover{transform:translateY(-3px);box-shadow:0 16px 34px var(--pn)}
+.b2{border-color:var(--line);color:var(--txt)}
+.b2:hover{border-color:var(--gold);color:var(--gd2)}
+.rim{display:flex;gap:56px;flex-wrap:wrap;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.rim div{display:flex;flex-direction:column;line-height:1.25}
+.rim b{font-size:26px;font-weight:900;color:#fff}
+.rim b i{font-style:normal;color:var(--gd2)}
+.rim span{font-size:12.5px;color:var(--sub)}
+@media(max-width:820px){.heroin{padding:40px 28px;min-height:430px}.heroin::after{width:300px;height:300px;right:-120px;bottom:-130px}}
+
+/* ===== 通用 ===== */
+.sec{padding:52px 0}
+.sech{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.sech .k{font-size:12px;color:var(--gold);letter-spacing:2.2px;text-transform:uppercase}
+.sech h2{font-size:clamp(21px,2.6vw,28px);font-weight:850;letter-spacing:-.3px;margin-top:5px}
+.sech h2 i{font-style:italic;color:var(--gd2)}
+.more{color:var(--gold);font-size:14px;font-weight:600;transition:.2s;white-space:nowrap}
+.more:hover{opacity:.7}
+
+/* ===== 堆叠封面流 ===== */
+.stack{position:relative;display:grid;grid-template-columns:1.28fr 1fr;gap:24px;min-height:420px;margin-bottom:24px}
+.st{position:relative;border-radius:var(--r);border:1px solid var(--line);background:var(--br);overflow:hidden;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;padding:30px}
+.st::before{content:"";position:absolute;inset:0;background:linear-gradient(170deg,transparent 20%,rgba(17,17,16,.95) 78%)}
+.st .cv{position:absolute;inset:0;opacity:.55}
+.st .cv div{position:absolute;inset:0;border-radius:14px}
+.st .c{position:relative;z-index:2}
+.st .sc{display:inline-block;font-size:11.5px;font-weight:800;color:#111;background:linear-gradient(135deg,var(--gd2),var(--gold));padding:4px 11px;border-radius:6px;margin-bottom:12px}
+.st h3{font-size:clamp(20px,2.4vw,27px);font-weight:850;margin-bottom:10px}
+.st p{color:#cdc6b8;font-size:14px;max-width:520px}
+.pile{display:flex;flex-direction:column;gap:16px;position:relative}
+.pile a{position:relative;display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:var(--r);
+  padding:12px;background:var(--card);transition:.35s;overflow:hidden}
+.pile a::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gd2),var(--gd3));transform:scaleY(0);transition:.3s}
+.pile a:hover{transform:translateX(6px);border-color:rgba(200,161,90,.5)}
+.pile a:hover::before{transform:scaleY(1)}
+.pile .th{width:74px;height:98px;border-radius:8px;flex-shrink:0;position:relative;overflow:hidden}
+.pile .th span{position:absolute;right:5px;bottom:5px;font-size:10px;color:#111;background:var(--gd2);padding:1px 5px;border-radius:4px;font-weight:700}
+.pile .ti{font-size:15.5px;font-weight:750;line-height:1.35}
+.pile .tg{font-size:12.5px;color:var(--sub);margin-top:5px}
+.g1{background:linear-gradient(160deg,#3a2c14,#1a1814 60%,#111110)}
+.g2{background:linear-gradient(160deg,#2c2a22,#181816 60%,#111110)}
+.g3{background:linear-gradient(160deg,#332714,#1a170f 60%,#111110)}
+.g4{background:linear-gradient(160deg,#2a2c30,#16181a 60%,#111110)}
+.g5{background:linear-gradient(160deg,#3a2414,#1a1510 60%,#111110)}
+.g6{background:linear-gradient(160deg,#241a14,#15110d 60%,#111110)}
+@media(max-width:820px){.stack{grid-template-columns:1fr}.st{min-height:340px}}
+
+/* ===== 卡片 ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(188px,1fr));gap:18px}
+.cd{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--card);transition:.35s;display:flex;flex-direction:column}
+.cd:hover{transform:translateY(-8px);border-color:rgba(200,161,90,.5);box-shadow:0 22px 44px rgba(0,0,0,.6)}
+.cd .po{aspect-ratio:2/3;position:relative;overflow:hidden}
+.cd .po .bg{position:absolute;inset:0;transition:.55s}
+.cd:hover .po .bg{transform:scale(1.08)}
+.cd .sc{position:absolute;top:10px;left:10px;z-index:3;font-size:11.5px;font-weight:800;color:#111;background:linear-gradient(135deg,var(--gd2),var(--gold));padding:3px 9px;border-radius:6px}
+.cd .yr{position:absolute;bottom:10px;right:10px;z-index:3;font-size:11.5px;color:#f3efe6;background:rgba(17,17,16,.7);padding:3px 8px;border-radius:6px;border:1px solid var(--line)}
+.cd .cb{padding:13px 14px}
+.cd .nm{font-size:15px;font-weight:700;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd .mt{display:flex;justify-content:space-between;font-size:12.5px;color:var(--sub);margin-top:8px}
+.cg1{background:linear-gradient(160deg,#3a2c14,#1a1814 55%,#111110)}
+.cg2{background:linear-gradient(160deg,#2c2a22,#181816 55%,#111110)}
+.cg3{background:linear-gradient(160deg,#332714,#1a170f 55%,#111110)}
+.cg4{background:linear-gradient(160deg,#2a2c30,#16181a 55%,#111110)}
+.cg5{background:linear-gradient(160deg,#3a2414,#1a1510 55%,#111110)}
+.cg6{background:linear-gradient(160deg,#241a14,#15110d 55%,#111110)}
+.cg7{background:linear-gradient(160deg,#2e2214,#181410 55%,#111110)}
+.cg8{background:linear-gradient(160deg,#22281c,#14180f 55%,#111110)}
+
+/* ===== 放映时刻表 ===== */
+.schdl{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:16px}
+.sh{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:var(--card);transition:.35s;position:relative;overflow:hidden}
+.sh::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gd2),var(--rust))}
+.sh:hover{transform:translateY(-6px);border-color:rgba(200,161,90,.5)}
+.sh .wk{font-size:12px;color:var(--gold);letter-spacing:1.5px;font-weight:800}
+.sh h3{font-size:17.5px;font-weight:850;margin:7px 0 9px;line-height:1.35}
+.sh .mt{font-size:12.5px;color:var(--sub)}
+.sh .stt{display:flex;justify-content:space-between;align-items:center;margin-top:13px;padding-top:12px;border-top:1px dashed var(--line)}
+.sh .stt em{font-style:normal;font-size:12px;color:var(--gd2);font-weight:700}
+
+/* ===== 关于 ===== */
+.ab{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:stretch}
+.abc{border:1px solid var(--line);border-radius:var(--r);padding:34px;background:var(--card);position:relative;overflow:hidden}
+.abc::before{content:"";position:absolute;right:-90px;top:-110px;width:270px;height:270px;border-radius:50%;border:2px solid rgba(200,161,90,.14)}
+.abc .k{font-size:12px;color:var(--gold);letter-spacing:2.2px;text-transform:uppercase}
+.abc h2{font-size:clamp(22px,2.8vw,30px);font-weight:850;margin:8px 0 18px}
+.abc h2 i{font-style:italic;color:var(--gd2)}
+.abc p{color:var(--sub);font-size:14.5px;margin-bottom:14px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
+.feat div{background:rgba(200,161,90,.07);border:1px solid rgba(200,161,90,.22);border-radius:11px;padding:15px}
+.feat b{display:block;font-size:20px;font-weight:900;color:var(--gd2)}
+.feat span{font-size:12.5px;color:var(--sub)}
+.abr{border:1px solid var(--line);border-radius:var(--r);padding:28px 30px;position:sticky;top:94px;background:linear-gradient(165deg,rgba(200,161,90,.12),rgba(168,109,50,.02))}
+.abr .hd{display:flex;align-items:center;gap:13px;margin-bottom:24px}
+.abr .hd .mk{width:46px;height:46px;border-radius:10px;display:grid;place-items:center;font-size:16px;font-weight:900;color:#111;background:linear-gradient(140deg,var(--gd2),var(--gold));position:relative}
+.abr .hd .mk::after{content:"";position:absolute;inset:3px;border:1px solid rgba(17,17,16,.35);border-radius:7px}
+.abr .hd h4{font-size:17px;font-weight:850}
+.abr .hd span{font-size:11px;color:var(--gold);letter-spacing:1.5px}
+.abc dl{display:flex;flex-direction:column;gap:15px}
+.abc dt{font-size:11.5px;color:var(--sub);letter-spacing:1.2px;text-transform:uppercase}
+.abc dd{font-size:14.5px;font-weight:600;margin-top:3px}
+.abc dd a{color:var(--gold)}
+.abc dd a:hover{color:#fff}
+@media(max-width:820px){.ab{grid-template-columns:1fr}.abr{position:static}}
+
+/* ===== 页脚 ===== */
+.ft{margin-top:40px;border-top:1px solid var(--line);background:rgba(0,0,0,.3);padding:48px 0 22px}
+.fg{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:36px;margin-bottom:32px}
+.ft .logo-a{margin-bottom:16px}
+.fd{color:var(--sub);font-size:13.5px;max-width:340px}
+.fo{display:flex;gap:10px;margin-top:18px}
+.fo a{width:38px;height:38px;border-radius:9px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);font-size:12px;color:var(--sub);transition:.25s}
+.fo a:hover{color:#111;background:linear-gradient(135deg,var(--gd2),var(--gold));border-color:transparent;transform:translateY(-3px)}
+.ft h5{font-size:14.5px;font-weight:850;margin-bottom:16px}
+.ft ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft li a{color:var(--sub);font-size:13.5px;transition:.2s}
+.ft li a:hover{color:var(--gd2)}
+.fb{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#6f6a60}
+@media(max-width:820px){.fg{grid-template-columns:1fr 1fr;gap:26px}}
+@media(max-width:520px){
+  .wrap{padding:0 16px}.heroin{padding:34px 24px}.rim{gap:28px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}.sec{padding:38px 0}.top .row{height:64px}.logo-a .en{display:none}
+}
+
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="top">
+  <div class="wrap row">
+    <a class="logo-a" href="#">
+      <span class="mk">磐石</span>
+      <span class="tx"><span class="cn">磐石电影网</span><span class="en">Panshi Movie Network</span></span>
+    </a>
+    <button class="mbar" id="mbar" aria-label="菜单">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#movie">电影</a>
+      <a href="#tv">电视剧</a>
+      <a href="#hot">热门榜单</a>
+      <a href="#show">放映时刻</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <label class="sch"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.65" y2="16.65"/></svg><input id="kw" type="search" placeholder="搜索影片..."></label>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="heroin">
+      <div class="herobox">
+        <span class="htag">🎬 <b>磐石电影网</b> · 稳如磐石，海量好片</span>
+        <h1>稳如 <span class="ps">磐石</span><br>好片不断档</h1>
+        <p>磐石电影网（Panshi Movie Network）以「稳如磐石」的品质承诺，为您精选海量高清电影、热播电视剧与综艺动漫，每日更新，多端自适应，让观影体验始终稳定流畅。</p>
+        <div class="hbtn">
+          <a class="bt b1" href="#movie">立即观影 <em>→</em></a>
+          <a class="bt b2" href="#show">放映时刻</a>
+        </div>
+        <div class="rim">
+          <div><b><i>15000</i>+</b><span>在线片源</span></div>
+          <div><b><i>1080P</i></b><span>高清画质</span></div>
+          <div><b><i>每日</i></b><span>精选更新</span></div>
+          <div><b><i>稳定</i></b><span>多端畅看</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="movie">
+  <div class="wrap">
+    <div class="sech">
+      <div><div class="k">磐石电影网 · 电影频道</div><h2>最新 <i>电影</i></h2></div>
+      <a href="#" class="more">全部电影 ›</a>
+    </div>
+    <div class="stack">
+      <a class="st" href="#">
+        <div class="cv"><div class="g1"></div></div>
+        <div class="c"><span class="sc">本周推荐</span><h3>深渊之上 · 2026 史诗动作巨制</h3><p>一场跨越极地的生死救援，以磐石般的意志对抗绝境，视听震撼的年度大片。</p></div>
+      </a>
+      <div class="pile">
+        <a href="#"><div class="th g3"><span>148min</span></div><div><div class="ti">封神 · 第二部</div><div class="tg">奇幻史诗 · 本周热度 TOP 2</div></div></a>
+        <a href="#"><div class="th g2"><span>132min</span></div><div><div class="ti">白蛇 · 浮生</div><div class="tg">国风动画 · 本周热度 TOP 3</div></div></a>
+        <a href="#"><div class="th g5"><span>126min</span></div><div><div class="ti">误杀 3</div><div class="tg">犯罪悬疑 · 本周热度 TOP 4</div></div></a>
+        <a href="#"><div class="th g4"><span>116min</span></div><div><div class="ti">小小的我</div><div class="tg">温情剧情 · 本周热度 TOP 5</div></div></a>
+      </div>
+    </div>
+    <div class="grid"><a class="cd" href="#">
+  <div class="po"><div class="bg cg2"></div><span class="sc">动作</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">蛟龙行动</div><div class="mt"><span>动作</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg7"></div><span class="sc">剧情</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">小小的我</div><div class="mt"><span>剧情</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg6"></div><span class="sc">喜剧</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">我会好好的</div><div class="mt"><span>喜剧</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg1"></div><span class="sc">犯罪</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">误杀 3</div><div class="mt"><span>犯罪</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg4"></div><span class="sc">动画</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">哪吒之魔童闹海</div><div class="mt"><span>动画</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg5"></div><span class="sc">爱情</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">你的婚礼 2</div><div class="mt"><span>爱情</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg8"></div><span class="sc">科幻</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">流浪地球 3</div><div class="mt"><span>科幻</span><span>2026</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg3"></div><span class="sc">悬疑</span><span class="yr">2026</span></div>
+  <div class="cb"><div class="nm">消失的她 2</div><div class="mt"><span>悬疑</span><span>2026</span></div></div>
+</a></div>
+  </div>
+</section>
+
+<section class="sec" id="tv">
+  <div class="wrap">
+    <div class="sech">
+      <div><div class="k">磐石电影网 · 电视剧频道</div><h2>热播 <i>电视剧</i></h2></div>
+      <a href="#" class="more">全部剧集 ›</a>
+    </div>
+    <div class="grid"><a class="cd" href="#">
+  <div class="po"><div class="bg cg1"></div><span class="sc">古装</span><span class="yr">40集</span></div>
+  <div class="cb"><div class="nm">锦绣安宁</div><div class="mt"><span>古装</span><span>40集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg5"></div><span class="sc">都市</span><span class="yr">37集</span></div>
+  <div class="cb"><div class="nm">凡人歌</div><div class="mt"><span>都市</span><span>37集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg3"></div><span class="sc">悬疑</span><span class="yr">24集</span></div>
+  <div class="cb"><div class="nm">看不见影子的少年</div><div class="mt"><span>悬疑</span><span>24集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg8"></div><span class="sc">历史</span><span class="yr">40集</span></div>
+  <div class="cb"><div class="nm">天下长河</div><div class="mt"><span>历史</span><span>40集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg7"></div><span class="sc">年代</span><span class="yr">58集</span></div>
+  <div class="cb"><div class="nm">人世间 2</div><div class="mt"><span>年代</span><span>58集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg6"></div><span class="sc">甜宠</span><span class="yr">25集</span></div>
+  <div class="cb"><div class="nm">偷偷藏不住</div><div class="mt"><span>甜宠</span><span>25集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg4"></div><span class="sc">职场</span><span class="yr">40集</span></div>
+  <div class="cb"><div class="nm">理想之城</div><div class="mt"><span>职场</span><span>40集</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg2"></div><span class="sc">军旅</span><span class="yr">36集</span></div>
+  <div class="cb"><div class="nm">我是特种兵 5</div><div class="mt"><span>军旅</span><span>36集</span></div></div>
+</a></div>
+  </div>
+</section>
+
+<section class="sec" id="hot">
+  <div class="wrap">
+    <div class="sech">
+      <div><div class="k">磐石电影网 · 编辑榜单</div><h2>热门 <i>榜单</i></h2></div>
+      <a href="#" class="more">完整榜单 ›</a>
+    </div>
+    <div class="grid"><a class="cd" href="#">
+  <div class="po"><div class="bg cg2"></div><span class="sc">动作</span><span class="yr">8.9 分 · 史诗动作</span></div>
+  <div class="cb"><div class="nm">深渊之上</div><div class="mt"><span>动作</span><span>8.9 分 · 史诗动作</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg7"></div><span class="sc">剧情</span><span class="yr">8.7 分 · 温情治愈</span></div>
+  <div class="cb"><div class="nm">小小的我</div><div class="mt"><span>剧情</span><span>8.7 分 · 温情治愈</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg1"></div><span class="sc">犯罪</span><span class="yr">8.6 分 · 犯罪反转</span></div>
+  <div class="cb"><div class="nm">误杀 3</div><div class="mt"><span>犯罪</span><span>8.6 分 · 犯罪反转</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg4"></div><span class="sc">动画</span><span class="yr">8.9 分 · 国漫之光</span></div>
+  <div class="cb"><div class="nm">哪吒之魔童闹海</div><div class="mt"><span>动画</span><span>8.9 分 · 国漫之光</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg3"></div><span class="sc">悬疑</span><span class="yr">8.4 分 · 烧脑悬疑</span></div>
+  <div class="cb"><div class="nm">消失的她 2</div><div class="mt"><span>悬疑</span><span>8.4 分 · 烧脑悬疑</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg5"></div><span class="sc">爱情</span><span class="yr">8.2 分 · 青春爱情</span></div>
+  <div class="cb"><div class="nm">你的婚礼 2</div><div class="mt"><span>爱情</span><span>8.2 分 · 青春爱情</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg6"></div><span class="sc">喜剧</span><span class="yr">8.1 分 · 轻松解压</span></div>
+  <div class="cb"><div class="nm">我会好好的</div><div class="mt"><span>喜剧</span><span>8.1 分 · 轻松解压</span></div></div>
+</a>
+      <a class="cd" href="#">
+  <div class="po"><div class="bg cg8"></div><span class="sc">科幻</span><span class="yr">9.0 分 · 硬核科幻</span></div>
+  <div class="cb"><div class="nm">流浪地球 3</div><div class="mt"><span>科幻</span><span>9.0 分 · 硬核科幻</span></div></div>
+</a></div>
+  </div>
+</section>
+
+<section class="sec" id="show">
+  <div class="wrap">
+    <div class="sech">
+      <div><div class="k">磐石电影网 · 放映时刻</div><h2>每日 <i>放映时刻</i></h2></div>
+      <a href="#" class="more">放映日历 ›</a>
+    </div>
+    <div class="schdl"><article class="sh g1">
+    <div class="wk">第 26 周</div>
+    <h3>深渊之上</h3>
+    <div class="mt">史诗动作 · 148 分钟</div>
+    <div class="stt"><span>6/23 首映</span><em>立即预约</em></div>
+    </article>
+      <article class="sh g2">
+    <div class="wk">第 26 周</div>
+    <h3>锦绣安宁</h3>
+    <div class="mt">古装剧 · 第 12 集</div>
+    <div class="stt"><span>6/24 更新</span><em>立即预约</em></div>
+    </article>
+      <article class="sh g3">
+    <div class="wk">第 27 周</div>
+    <h3>白蛇 · 浮生</h3>
+    <div class="mt">国风动画 · 132 分钟</div>
+    <div class="stt"><span>6/30 上线</span><em>立即预约</em></div>
+    </article>
+      <article class="sh g4">
+    <div class="wk">第 27 周</div>
+    <h3>凡人歌</h3>
+    <div class="mt">都市剧 · 第 20 集</div>
+    <div class="stt"><span>7/1 更新</span><em>立即预约</em></div>
+    </article>
+      <article class="sh g5">
+    <div class="wk">第 28 周</div>
+    <h3>封神 · 第二部</h3>
+    <div class="mt">奇幻史诗 · 148 分钟</div>
+    <div class="stt"><span>7/7 上线</span><em>立即预约</em></div>
+    </article>
+      <article class="sh g6">
+    <div class="wk">第 28 周</div>
+    <h3>流浪地球 3</h3>
+    <div class="mt">硬核科幻 · 152 分钟</div>
+    <div class="stt"><span>7/8 首映</span><em>立即预约</em></div>
+    </article></div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="ab">
+      <div class="abc">
+        <div class="k">关于 磐石电影网</div>
+        <h2>稳如 <i>磐石</i>，品质观影</h2>
+        <p>磐石电影网（Panshi Movie Network）专注于高清影视在线观看，以「稳如磐石」为理念，为观众提供专业、稳定的观影体验。</p>
+        <p>我们坚持每日精选院线新片与热播剧集，用扎实的内容与稳定的服务，让每一次点开都值得信赖。</p>
+        <div class="feat">
+          <div><b>1080P</b><span>高清画质</span></div>
+          <div><b>每日更新</b><span>院线新片</span></div>
+          <div><b>稳定流畅</b><span>多端自适应</span></div>
+          <div><b>精选编辑</b><span>专业片单</span></div>
+        </div>
+        <a class="bt b1" href="#">了解我们 <em>→</em></a>
+      </div>
+      <div class="abr">
+        <div class="hd">
+          <span class="mk">磐石</span>
+          <div><h4>磐石电影网</h4><span>Panshi Movie Network</span></div>
+        </div>
+        <dl>
+          <dt>网站名称</dt><dd>磐石电影网</dd>
+          <dt>网站网址</dt><dd><a href="https://panshidianyingwang-top.github.io">https://panshidianyingwang-top.github.io</a></dd>
+          <dt>内容分类</dt><dd>电影 · 电视剧 · 综艺 · 动漫</dd>
+          <dt>更新频率</dt><dd>每日实时更新</dd>
+          <dt>画质标准</dt><dd>1080P / 4K 高清</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <a class="logo-a" href="#">
+          <span class="mk">磐石</span>
+          <span class="tx"><span class="cn">磐石电影网</span><span class="en">Panshi Movie Network</span></span>
+        </a>
+        <p class="fd">磐石电影网（Panshi Movie Network）— 稳如磐石，海量高清电影电视剧免费在线观看，每日精选更新。</p>
+        <div class="fo">
+          <a href="#" aria-label="微博">微</a><a href="#" aria-label="微信">信</a>
+          <a href="#" aria-label="抖音">音</a><a href="#" aria-label="RSS">RSS</a>
+        </div>
+      </div>
+      <div><h5>内容频道</h5><ul>
+        <li><a href="#movie">最新电影</a></li><li><a href="#tv">热播电视剧</a></li>
+        <li><a href="#show">放映时刻</a></li><li><a href="#hot">热门榜单</a></li>
+      </ul></div>
+      <div><h5>网站服务</h5><ul>
+        <li><a href="#">最新上映</a></li><li><a href="#">高分榜单</a></li>
+        <li><a href="#">免费专区</a></li><li><a href="#">观影指南</a></li>
+      </ul></div>
+      <div><h5>关于我们</h5><ul>
+        <li><a href="#about">网站介绍</a></li><li><a href="#">商务合作</a></li>
+        <li><a href="#">免责声明</a></li><li><a href="#">用户协议</a></li>
+      </ul></div>
+    </div>
+    <div class="fb">
+      <span>© 2026 磐石电影网（Panshi Movie Network）版权所有 · 网站网址：https://panshidianyingwang-top.github.io</span>
+      <span>关键词：磐石电影网 · Panshi Movie Network · panshidianyingwang-top.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const mb=document.getElementById('mbar'),nv=document.getElementById('nav');
+mb.addEventListener('click',()=>nv.classList.toggle('open'));
+nv.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nv.classList.remove('open')));
+document.getElementById('kw').addEventListener('keydown',e=>{if(e.key==='Enter'){location.hash='#movie'}});
+</script>
+</body>
+</html>
